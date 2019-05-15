@@ -1,0 +1,4 @@
+(defun marble (s)
+  (let (count 0))
+  (loop :for c :across s
+        :do (+ count (parse-integer c))))

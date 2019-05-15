@@ -1,0 +1,7 @@
+(defun marble (s)
+  (let ((count 0))
+    (loop :for c :across s
+          :do (if (string= c "1")(incf count)))
+    count))
+
+(format t "~A~%"(marble (read-line)))
