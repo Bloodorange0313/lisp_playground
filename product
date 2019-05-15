@@ -1,0 +1,6 @@
+(defun product (a b)
+ (cond
+  ((or (/=(mod a 2)1)(/=(mod b 2)1))"Even")
+  (t "Odd")))
+
+(format t "~A~%" (product (read) (read)))
